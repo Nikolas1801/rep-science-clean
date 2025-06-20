@@ -27,7 +27,6 @@ if (file.exists("DT.ndjson")) {
     count(date)
   
   # Plot
-  # Count tweets per day (robust version)
   plot_data <- biden_tweets %>%
     mutate(
       created_at = as.character(created_at),
